@@ -2,6 +2,8 @@ import sys
 import time
 import threading
 import pygetwindow as gw
+from PyQt5.QtGui import QIcon
+
 
 from PyQt5.QtCore import Qt, QVariantAnimation, QEasingCurve
 from PyQt5.QtGui import QColor, QPainter, QPen
@@ -116,6 +118,7 @@ class AutoInputWindow(QWidget):
         self.bg_color = QColor("#1E1E1E")
 
         self.init_ui()
+        self.setWindowIcon(QIcon("autoinput.ico"))
 
     def init_ui(self):
         self.setWindowTitle("Auto Input Tool")
